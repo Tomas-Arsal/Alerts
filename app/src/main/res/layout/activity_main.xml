@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Show toasts" />
+
+    <Button
+        android:id="@+id/dialoge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="SHOW DIALOGE"
+
+        />
+
+    <Button
+        android:id="@+id/notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="SHOE NOTIFICATIO"
+
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+
+            <TextView
+                android:layout_column="1"
+                android:padding="7dp"
+                android:text="Open..." />
+
+
+            <TextView
+                android:layout_gravity="end"
+                android:padding="7dp"
+                android:text="@string/ctrol_o"
+                tools:ignore="RtlHardcoded" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="1"
+                android:padding="7dp"
+                android:text="Close..." />
+
+            <TextView
+                android:layout_gravity="right"
+                android:padding="7dp"
+                android:text="Ctrol_A" />
+
+
+        </TableRow>
+
+        <View
+            android:layout_height="5dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="1"
+                android:padding="7dp"
+                android:text="Import..."
+
+                />
+
+            <TextView
+                android:layout_column="0"
+                android:padding="7dp"
+                android:text="X" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+
+            <TextView
+                android:layout_column="1"
+                android:padding="7dp"
+                android:text="Export..." />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_column="0"
+                android:padding="7dp"
+                android:text="X" />
+        </TableRow>
+
+        <View
+            android:layout_height="7dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <TableRow>
+
+            <TextView android:text="Exit"
+
+                />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
